@@ -18,11 +18,11 @@ function activateMenuAtCurrentSection(section){
     // quais dados são necessários?
     // Verificando se a seção passou da linha 
     const sectionTop = section.offsetTop
-    const sectionHeigth = section.offsetHeigth
+    const sectionHeight = section.offsetHeight
     const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop
 
     // Verifica se a base está abaixo da linha alvo
-    const sectionEndsAt = sectionTop + sectionHeigth
+    const sectionEndsAt = sectionTop + sectionHeight
     const sectionEndPassedTargetLine = sectionEndsAt <= targetLine
 
     // Limites da seção
